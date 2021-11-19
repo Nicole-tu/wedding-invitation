@@ -1,0 +1,111 @@
+@import "fonts.css";
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #F3D9C0;
+    font-family: 'Microsoft JhengHei', Verdana, Geneva, Tahoma, monospace, sans-serif;
+}
+
+.host-title {
+    font-family: 'Courgette', monospace;
+    font-weight: 600;
+    text-align: left;
+    position: absolute;
+    right: 5vw;
+    bottom: 2vh;
+}
+
+.line-word-center {
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.line-word-center .line {
+    display: inline-block;
+    width: 33vw;
+    border-top: 5px solid #555;
+}
+
+.line-word-center .word {
+    color: #555;
+    vertical-align: middle;
+    width: 28vw;
+    display: inline-block;
+    letter-spacing: 20px;
+    text-indent: 20px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+section{
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+article{
+    margin: 10px 5px;
+}
+
+section#info h1 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+section#info h5 {
+    margin-bottom: 15px;
+}
+
+section#info h6 {
+    margin-bottom: 10px;
+}
+
+section#info h6.time-line {
+    justify-content: center;
+    align-items: center;
+}
+
+section#info h6.time-line span{
+    padding-left: 20px;
+}
+
+section#info h6.time-line span i{
+    padding-right: 5px;
+    color: #a84518;
+    transform: rotate(-20deg);
+}
+
+article.traffice h6 i{
+    padding-right: 5px;
+    color: #ff3000;
+    font-size: 1.1rem;
+}
+
+.photo-gallery{
+    margin: 0 5px;
+}
+
+.photo-gallery a,
+.photo-gallery div,
+.photo-gallery div a{
+    padding: 2px;
+}
+
+@media (max-width: 1024px) {
+    .container-fluid, .container {
+        margin-right: auto;
+        margin-left: auto;
+        padding-left:0px;
+        padding-right:0px;
+    }
+
+    .line-word-center .word {
+        letter-spacing: unset;
+        text-indent: unset;
+    }
+}
