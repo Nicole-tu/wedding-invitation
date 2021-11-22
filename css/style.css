@@ -4,8 +4,8 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #F3D9C0;
-    font-family: 'Microsoft JhengHei', Verdana, Geneva, Tahoma, monospace, sans-serif;
+    background-color: #f3eee4;
+    font-family: 'Noto Sans TC', 'Microsoft JhengHei', Verdana, Geneva, Tahoma, monospace, sans-serif;
 }
 
 .host-title {
@@ -41,12 +41,12 @@ body {
     font-size: 1.2em;
 }
 
-section{
+section {
     text-align: center;
     margin-bottom: 40px;
 }
 
-article{
+article {
     margin: 10px 5px;
 }
 
@@ -70,30 +70,69 @@ section#info h6.time-line {
     align-items: center;
 }
 
-section#info h6.time-line span{
+section#info h6.time-line span {
     padding-left: 20px;
 }
 
-section#info h6.time-line span i{
+section#info h6.time-line span i {
     padding-right: 5px;
     color: #a84518;
     transform: rotate(-20deg);
 }
 
-article.traffice h6 i{
+article.traffice h6 i {
     padding-right: 5px;
     color: #ff3000;
     font-size: 1.1rem;
 }
 
-.photo-gallery{
-    margin: 0 5px;
+article.photo-info h6 i {
+    padding-right: 5px;
+    font-size: 1.1rem;
 }
 
-.photo-gallery a,
-.photo-gallery div,
-.photo-gallery div a{
-    padding: 2px;
+.photo-gallery {
+    margin: 15px 5px;
+    flex-wrap: wrap;
+}
+
+.photo-gallery a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.photo-gallery a > img {
+    height: 20vh;
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 4px;
+}
+
+.photo-gallery-small a {
+    color: transparent;
+    text-decoration: none;
+}
+
+.photo-gallery-small a > img {
+    width: 22vh;
+    flex-grow: 1;
+    object-fit: cover;
+    margin: 4px;
+}
+
+
+.top-btn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 5px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: #666; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    border-radius: 50%; /* Rounded corners */
+    font-size: 1.2rem; /* Increase font size */
 }
 
 @media (max-width: 1024px) {
