@@ -19,6 +19,7 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
+      async
     ></script>
     <!-- lightgallery -->
     <script
@@ -26,33 +27,8 @@
       integrity="sha512-+1CyleTPoFvPO15/CfBZ5h6k/mu/qCQe9uxq1tEfO7SRJ52MnCAQ561bAYkvrsGtnG7AkcvKtVwdeoZc8ps7bQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      async
     ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/thumbnail/lg-thumbnail.umd.min.js"
-      integrity="sha512-v+/cnd6XTt28XV37rip+QRMB9OTYr90c3TxqNLLZZSH7cfoirS2N6bt9HRvlbyRnhco/vBK5pUCJdaIpS+fuhw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/plugins/zoom/lg-zoom.umd.min.js"
-      integrity="sha512-HUKhPg1xSgASHRlFw8S6QJX7+AsYEf0lV9P/UPrzI5l3nBmyRVOekKoU5rtexB9RQseLgbaelQK4BRWrpCbItw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lg-thumbnail.min.css"
-      integrity="sha512-GRxDpj/bx6/I4y6h2LE5rbGaqRcbTu4dYhaTewlS8Nh9hm/akYprvOTZD7GR+FRCALiKfe8u1gjvWEEGEtoR6g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lg-zoom.min.css"
-      integrity="sha512-SGo05yQXwPFKXE+GtWCn7J4OZQBaQIakZSxQSqUyVWqO0TAv3gaF/Vox1FmG4IyXJWDwu/lXzXqPOnfX1va0+A=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery-bundle.css"
@@ -61,8 +37,8 @@
       referrerpolicy="no-referrer"
     />
     <!-- inner style and js -->
-    <link rel="stylesheet" href="./css/style.css?20211119" />
-    <script src="./js/main.js?20211119"></script>
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <script src="./js/main.js" async></script>
     <title>懿倫 & 晨寧 家宴邀請</title>
   </head>
   <body>
@@ -86,38 +62,38 @@
             <div class="carousel-inner">
               <div class="carousel-item active">
                 <img
-                  src="https://imgur.com/i0iRGDP.jpg"
+                  src="https://i.imgur.com/i0iRGDP.jpg"
                   class="img-fluid d-block w-100"
                   style="transform: scaleX(-1)"
-                  alt=""
+                  alt="pre-wedding photoshot"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://imgur.com/ZOIST3a.jpg"
+                  src="https://i.imgur.com/ZOIST3a.jpg"
                   class="img-fluid d-block w-100"
-                  alt=""
+                  alt="pre-wedding photoshot"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://imgur.com/F1T8tlb.jpg"
+                  src="https://i.imgur.com/F1T8tlb.jpg"
                   class="img-fluid d-block w-100"
-                  alt=""
+                  alt="pre-wedding photoshot"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://imgur.com/eo62FHe.jpg"
+                  src="https://i.imgur.com/eo62FHe.jpg"
                   class="img-fluid d-block w-100"
-                  alt=""
+                  alt="pre-wedding photoshot"
                 />
               </div>
               <div class="carousel-item">
                 <img
-                  src="https://imgur.com/iRn86jo.jpg"
+                  src="https://i.imgur.com/iRn86jo.jpg"
                   class="img-fluid d-block w-100"
-                  alt=""
+                  alt="pre-wedding photoshot"
                 />
               </div>
             </div>
@@ -133,7 +109,7 @@
               src="https://img.icons8.com/fluency/48/000000/wedding-rings.png"
             />杜晨寧
           </h1>
-          <h2>誠摯邀請您前來參與<br />一場溫馨的家宴</h2>
+          <h3>誠摯邀請您前來參與<br />一場溫馨的家宴</h3>
           <article class="invite">
             <div class="line-word-center">
               <span class="line"></span>
@@ -164,11 +140,14 @@
               <a href="./img/map.png">
                 <img
                   class="img-fluid"
+                  loading="lazy"
                   src="./img/map.png"
                   alt="地址:台北市中山北路二段57-1號"
                 />
               </a>
             </div>
+            <h6 style="margin-top: 10px;"><i class="las la-parking"></i>國賓飯店停車場</h6>
+            <h6>台北市中山區中山北路二段65巷9號</h6>
           </article>
         </section>
         <section id="photos">
@@ -185,179 +164,203 @@
               <a href="./img/DSC00996_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/EldQO5o.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/EldQO5o.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00932_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/ZOIST3a.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/ZOIST3a.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00965_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/F1T8tlb.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/F1T8tlb.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00922_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/4F06oCc.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/4F06oCc.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01222_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/VOAW7bB.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/VOAW7bB.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01219_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/ZTYuOqP.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/ZTYuOqP.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01250_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/i0iRGDP.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/i0iRGDP.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00950_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/9hneuq5.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/9hneuq5.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00991_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/rPWAne9.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/rPWAne9.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00951_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/M2mXrMf.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/M2mXrMf.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00971_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/74sh17n.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/74sh17n.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC00923_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/HN1ekHE.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/HN1ekHE.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01227_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/TEjj8Ah.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/TEjj8Ah.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01060_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/eo62FHe.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/eo62FHe.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01021_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/VOJHSHR.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/VOJHSHR.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01117_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/Ol0McvE.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/Ol0McvE.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <a href="./img/DSC01099_sm.jpg">
                 <img
                   class="img-fluid"
-                  src="https://imgur.com/cWqcVE3.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/cWqcVE3.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
-              <!-- pc outbound -->
               <a href="./img/DSC01037_sm.jpg">
                 <img
                   class="img-fluid zoom-in-photo"
-                  src="https://imgur.com/Amvcao0.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/Amvcao0.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
               <div class="photo-gallery-small">
                 <a href="./img/DSC01114_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/ReG4MGG.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/ReG4MGG.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
                 <a href="./img/DSC01125_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/KJlngs2.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/KJlngs2.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
                 <a href="./img/DSC01174_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/ZKyU1nQ.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/ZKyU1nQ.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
                 <a href="./img/DSC01176_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/9qSCQlb.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/9qSCQlb.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
                 <a href="./img/DSC01184_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/NtTHEfV.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/NtTHEfV.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
                 <a href="./img/DSC01189_sm.jpg">
                   <img
                     class="img-fluid"
-                    src="https://imgur.com/ynNYwgI.jpg"
-                    alt=""
+                    loading="lazy"
+                    src="https://i.imgur.com/ynNYwgI.jpg"
+                    alt="pre-wedding photoshot"
                   />
                 </a>
               </div>
               <a href="./img/DSC01186_sm.jpg">
                 <img
                   class="img-fluid zoom-in-photo"
-                  src="https://imgur.com/iRn86jo.jpg"
-                  alt=""
+                  loading="lazy"
+                  src="https://i.imgur.com/iRn86jo.jpg"
+                  alt="pre-wedding photoshot"
                 />
               </a>
             </div>

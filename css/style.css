@@ -66,9 +66,9 @@ section#info h1 img {
   margin: 0 10px 0 -5px;
 }
 
-section#info h2 {
-  letter-spacing: 9px;
-  line-height: 40px;
+section#info h3 {
+  letter-spacing: 7px;
+  line-height: 35px;
 }
 
 section#info h5 {
@@ -90,13 +90,13 @@ section#info h6.time-line span {
 
 section#info h6.time-line span i {
   padding-right: 5px;
-  color: #a84518;
+  color: #A5432B;
   transform: rotate(-20deg);
 }
 
 article.traffic h6 i {
   padding-right: 5px;
-  color: #ff3000;
+  color: #A76150;
   font-size: 1.1rem;
 }
 
@@ -117,7 +117,7 @@ article.photo-info h6 i {
 }
 
 .photo-gallery a > img {
-  height: 20vh;
+  height: 30vh;
   flex-grow: 1;
   object-fit: cover;
   margin: 4px;
@@ -136,24 +136,32 @@ article.photo-info h6 i {
 }
 
 .top-btn {
-  display: none; /* Hidden by default */
-  position: fixed; /* Fixed/sticky position */
-  bottom: 20px; /* Place the button at the bottom of the page */
+  display: none;
+  position: fixed;
+  bottom: 20px;
   background-color: #c9a16e;
-  right: 5px; /* Place the button 30px from the right */
-  z-index: 99; /* Make sure it does not overlap */
+  right: 5px;
+  z-index: 99;
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  color: #3b4e07; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  border-radius: 50%; /* Rounded corners */
-  font-size: 1.5em; /* Increase font size */
+  color: #3b4e07;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  margin: 0;
+  padding: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 #map-thumbnails img {
+  max-width: 500px;
   width: 50%;
 }
 
+/* screen smaller than 1024px */
 @media (max-width: 1024px) {
   .container-fluid,
   .container {
@@ -183,6 +191,10 @@ article.photo-info h6 i {
 
   .photo-gallery {
     display: block;
+  }
+
+  .photo-gallery a > img {
+    height: 20vh;
   }
 
   .photo-gallery a > img.zoom-in-photo {
