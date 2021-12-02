@@ -161,6 +161,11 @@ article.photo-info h6 i {
   width: 50%;
 }
 
+footer{
+  margin: 25px;
+  padding: 20px;
+}
+
 /* screen smaller than 1024px */
 @media (max-width: 1024px) {
   .container-fluid,
